@@ -1,0 +1,32 @@
+Package: Rashomonlite
+Type: Package
+Title: Rashomon Model Selection
+Version: 0.1.0
+Authors@R: 
+    c(
+      person(
+        "Prince Mensah", "Ansah",
+        email = "pma0020@auburn.edu",
+        role = c("aut", "cre")
+      ),
+      person(
+        "Mark Castilo", "Philip",
+        email = "mcp0001@auburn.edu",
+        role = "aut"
+      ),
+      person(
+        "Mohammad Al", "Srayheen",
+        email = "mls0023@auburn.edu",
+        role = "aut"
+      )
+    )
+Description: Implements the Rashomon model selection procedure for logistic regression. 
+    This package provides functions for fitting, expanding, and selecting candidate 
+    models across increasing dimensionalities based on AIC criteria.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Imports:
+    stats,
+    titanic
