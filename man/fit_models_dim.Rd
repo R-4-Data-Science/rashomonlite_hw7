@@ -4,7 +4,7 @@
 \alias{fit_models_dim}
 \title{Fit multiple logistic regression models of a specified dimension}
 \usage{
-fit_models_dim(X, y, k, m)
+fit_models_dim(X, y, k, m, sets = NULL)
 }
 \arguments{
 \item{X}{A data frame or matrix of predictors. Columns should be numeric or
@@ -18,6 +18,11 @@ with length equal to the number of rows in \code{X}.}
 \item{m}{Integer specifying the maximum number of models to fit for this dimension.
 If the total number of possible combinations exceeds \code{m}, a random sample of
 size \code{m} is drawn (with fixed seed for reproducibility).}
+
+\item{sets}{A \code{list} of character vectors, each specifying a
+candidate combination of predictors to be used in a model. Only
+those with length equal to \code{k} are used. If NULL, all combinations
+of size k are generated.}
 }
 \value{
 A data frame with one row per fitted model and the following columns:
